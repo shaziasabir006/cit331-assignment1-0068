@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register for NEXORA university technology events and workshops.">
+  <title>Register | NEXORA</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <a href="#main-content">Skip to main content</a>
+
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="index.html">NEXORA</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li>
+          <a href="register.html" class="active" aria-current="page">
+            Join Us
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="register-title">
+      <h1 id="register-title">Your Next Big Idea Starts Here.</h1>
+      <p>
+        Join NEXORA events, meet innovators and start building
+        your future in technology.
+      </p>
+
+      <!-- Registration form goes here -->
+<form id="registration-form">
+  <fieldset>
+    <legend>Student Information</legend>
+
+    <label for="full-name">Full Name</label>
+    <input
+      type="text"
+      id="full-name"
+      name="fullName"
+      placeholder="Enter your full name"
+      required
+      minlength="3"
+      maxlength="60"
+    >
+
+    <label for="email">University Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="student@university.edu"
+      required
+    >
+
+    <label for="phone">Phone Number</label>
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      placeholder="03001234567"
+      pattern="[0-9]{11}"
+      title="Enter an 11-digit phone number"
+      required
+    >
+  </fieldset>
+
+  <fieldset>
+    <legend>Event Registration</legend>
+
+    <label for="event">Choose an Event</label>
+    <select id="event" name="event" required>
+      <option value="">Select an event</option>
+      <option value="FutureTech Hackathon 2026">
+        FutureTech Hackathon 2026
+      </option>
+      <option value="AI & Machine Learning Workshop">
+        AI & Machine Learning Workshop
+      </option>
+      <option value="Cybersecurity Challenge">
+        Cybersecurity Challenge
+      </option>
+      <option value="Web Creators Bootcamp">
+        Web Creators Bootcamp
+      </option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <legend>How Did You Hear About Us?</legend>
+
+    <input type="radio" id="social-media" name="source"
+           value="Social Media" required>
+    <label for="social-media">Social Media</label>
+
+    <input type="radio" id="friend" name="source"
+           value="Friend">
+    <label for="friend">Friend</label>
+
+    <input type="radio" id="university" name="source"
+           value="University Announcement">
+    <label for="university">University Announcement</label>
+  </fieldset>
+
+  <button type="submit">Complete Registration</button>
+  <p id="confirmation" role="status" aria-live="polite"></p>
+</form>
+    </section>
+
+    <section aria-labelledby="saved-title">
+      <h2 id="saved-title">Saved Registrations</h2>
+      <ul id="registration-list"></ul>
+      <button type="button" id="clear-all">Clear All</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 NEXORA. University Tech & Innovation Society.</p>
+    <p>Built for CIT331 Web Technologies.</p>
+  </footer>
+
+  <script src="js/script.js" defer></script
