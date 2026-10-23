@@ -29,7 +29,7 @@ It helps students to explore events and register for activities.
 - View and clear saved registrations
 
 ## Screenshots
-Add your own homepage screenshot here.
+![NEXORA Homepage](images/homepage.png)
 
 ## Image Credits
 Add the image source and creator if you use an external image.
