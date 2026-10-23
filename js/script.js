@@ -23,6 +23,15 @@ if (form && list && clearButton && confirmation) {
 
     const registrations = getRegistrations();
 
+    // Show a message when no registrations exist
+    if (registrations.length === 0) {
+      const item = document.createElement("li");
+      item.textContent = "No registrations yet.";
+      list.appendChild(item);
+      return;
+    }
+
+    // Display saved registrations
     registrations.forEach(function (student) {
       const item = document.createElement("li");
       item.textContent = `${student.name} — ${student.event}`;
