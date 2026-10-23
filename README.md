@@ -32,8 +32,7 @@ It helps students to explore events and register for activities.
 ![NEXORA Homepage](images/homepage.png)
 
 ## Image Credits
-Add the image source and creator if you use an external image.
-
+No external stock images were used.
 ## Author
 Roll Number: 0068
 Course: CIT331
