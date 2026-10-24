@@ -79,13 +79,20 @@ if (form && list && clearButton && confirmation) {
   });
 
   clearButton.addEventListener("click", function () {
-    localStorage.removeItem(storageKey);
+  const confirmed = window.confirm(
+    "Are you sure you want to delete all saved registrations?"
+  );
 
-    confirmation.textContent =
-      "All registrations cleared.";
+  if (!confirmed) {
+    return;
+  }
 
-    showRegistrations();
-  });
+  localStorage.removeItem(storageKey);
 
+  confirmation.textContent =
+    "All registrations cleared.";
+
+  showRegistrations();
+});
   showRegistrations();
 }
